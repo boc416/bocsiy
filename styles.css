@@ -1,0 +1,71 @@
+.bgClr{
+    background-color: rgb(255, 243, 196);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; /* Bottom position of the button */
+    right: 20px; /* Right position of the button */
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(100%); /* Move button below the viewport */
+    z-index: 1000; /* Ensure the button is on top of other content */
+}
+
+.scroll-to-top.show {
+    opacity: 1; /* Show the button */
+    transform: translateY(0); /* Move button into view */
+}
+
+.scroll-to-top:hover {
+    background-color: #ffdd00;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+
+}
+
+.btn-custom {
+    width: 400px; /* Set a fixed width */
+    text-align: center; /* Center the text */
+}
+
+.image-container {
+    height: 30vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px; /* Responsive padding */
+}
+
+.img-shadow {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
+    border-radius: 50%; /* Optional: to make the image rounded */
+}
+
+
+    body {
+        padding-top: 56px;
+        background-image: url('../BOC - 416/assets/Back_SMD_Top.png');
+        background-size: 100%;
+        /* Adjust as needed */
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #ffffff;
+        /* Light background color */
+        color: #333;
+        /* Darker text color for better contrast on light background */
+    }
+
+
