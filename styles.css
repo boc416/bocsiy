@@ -57,7 +57,7 @@
 
     body {
         padding-top: 56px;
-        background-image: url('../BOC - 416/assets/Back_SMD_Top.png');
+        background-image: url('assets/Back_SMD_Top.png');
         background-size: 100%;
         /* Adjust as needed */
         background-position: top;
